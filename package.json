@@ -1,0 +1,19 @@
+{
+  "name": "lima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o css/style.css",
+    "watch": "npx tailwindcss -i ./input.css -o css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.2"
+  }
+}

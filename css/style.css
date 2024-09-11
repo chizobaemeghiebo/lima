@@ -678,12 +678,12 @@ video {
   display: none;
 }
 
-.min-h-\[90vh\] {
-  min-height: 90vh;
+.min-h-\[80vh\] {
+  min-height: 80vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-\[90vh\] {
+  min-height: 90vh;
 }
 
 .w-1\/2 {
@@ -1224,16 +1224,16 @@ video {
     display: flex;
   }
 
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
-
-  .lg\:w-7\/12 {
-    width: 58.333333%;
+  .lg\:min-h-\[90vh\] {
+    min-height: 90vh;
   }
 
   .lg\:w-3\/4 {
     width: 75%;
+  }
+
+  .lg\:w-7\/12 {
+    width: 58.333333%;
   }
 
   .lg\:grid-cols-2 {

@@ -5,7 +5,7 @@ body {
 /* swiper */
 .swiper {
   width: 100%;
-  max-height: 90vh;
+  max-height: 80vh;
 }
 
 .swiper-button-next::after,

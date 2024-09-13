@@ -582,6 +582,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -660,6 +664,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-32 {
+  margin-top: 8rem;
 }
 
 .block {
@@ -885,6 +893,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-32 {
+  padding: 8rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -916,6 +928,10 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .text-center {
@@ -1234,6 +1250,10 @@ video {
 
   .lg\:w-7\/12 {
     width: 58.333333%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:grid-cols-2 {

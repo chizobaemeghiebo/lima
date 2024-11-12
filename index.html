@@ -10,186 +10,165 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- animatecss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script defer src="js/main.js"></script>
   </head>
-  <body>
+
+  <body class="relative" id="body">
     <!-- Swiper -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <!-- Navbar -->
-        <nav class="z-50 absolute container left-0 right-0 mx-auto p-6">
-          <!-- Flex container -->
-          <div class="flex items-center justify-between">
-            <!-- Logo -->
-            <div class="w-1/6 md:w-1/12">
-              <img src="img/Main-logo.svg" alt="" />
-            </div>
-            <!-- Menu Items -->
-            <div class="hidden space-x-6 md:flex">
-              <a href="#hero" class="text-white font-bold hover:text-gray-300">Home</a>
-              <a href="#features" class="text-white font-bold hover:text-gray-300">About Us</a>
-              <a href="#contact" class="text-white font-bold hover:text-gray-300">Contact</a>
-            </div>
-            <!-- Button -->
-            <a href="#" class="hidden p-3 px-6 pt-2 text-white rounded-sm baseline bg-blue-900 lg:block">Get Started</a>
 
-            <!-- Hamburger Icon -->
-            <button id="" class="block hamburger md:hidden focus:outline-none">
-              <img class="open-menu" src="img/menu.svg" alt="" />
-              <img class="hidden close-menu" src="img/x.svg" alt="" />
-            </button>
-          </div>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div class="md:hidden">
-          <div id="menu" class="z-50 absolute flex-col items-center hidden self-end py-24 m-0 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 top-0 min-h-[90vh] w-3/4 drop-shadow-md">
-            <a href="index.html" class="hover:text-slate-800">Home</a>
-            <a href="#features" class="hover:text-slate-800">About Us</a>
-            <a href="#features" class="hover:text-slate-800">Features</a>
-            <a href="#contact" class="hover:text-slate-800">Get Started</a>
-          </div>
+    <!-- Navbar -->
+    <nav class="z-50 absolute left-0 right-0 mx-auto py-6 px-8">
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="w-1/6 md:w-1/12">
+          <img src="img/Main-logo.svg" alt="" />
         </div>
-
-        <!-- slide 1 -->
-        <div class="swiper-slide">
-          <header class="relative bg-top bg-no-repeat bg-cover min-h-[80vh] lg:min-h-[90vh]" style="background-image: url('img/technology-4085029_640.webp')">
-            <!-- Hero Section -->
-            <section id="hero" class="pt-20 lg:pt-32 after:content-['*'] after:bg-black after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:opacity-50 after:z-10">
-              <!-- Flex Container -->
-              <div class="container mx-auto">
-                <div class="flex flex-col items-center">
-                  <h1 class="z-20 text-4xl font-bold text-center md:text-5xl my-4 md:my-10 text-white w-3/4 mx-auto lg:w-full">Experience Marketing Like Never Before</h1>
-                  <p class="z-20 text-center text-white text-lg md:text-2xl mb-10 w-3/4 mx-auto">
-                    LIMA is a lightning fast marketing expert. We ignite your brand with unparalleled speed and precision. Our strategies deliver results that outpace the competition. Let's help your business go global.
-                  </p>
-                  <div class="flex justify-center md:justify-start">
-                    <a href="#" class="z-20 p-3 px-6 pt-2 text-white bg-blue-900 rounded-sm text-lg md:block -mt-8 md:mt-0">Get Started</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </header>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex items-center">
+          <a href="#hero" class="text-white font-bold hover:text-blue-800">Home</a>
+          <a href="#features" class="text-white font-bold hover:text-blue-800">About Us</a>
+          <a href="#contact" class="text-white font-bold hover:text-blue-800">Contact</a>
+          <a href="#" class="p-3 px-6 pt-2 text-white rounded-sm baseline bg-blue-900 lg:block">Get Started</a>
         </div>
-        <div class="swiper-slide">
-          <header class="relative bg-top bg-no-repeat bg-cover min-h-[80vh] lg:min-h-[90vh]" style="background-image: url('img/istockphoto-1158762452-612x612.jpg')">
-            <!-- Hero Section -->
-            <section id="hero" class="pt-20 lg:pt-32 after:content-['*'] after:bg-black after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:opacity-50 after:z-10">
-              <!-- Flex Container -->
-              <div class="container mx-auto">
-                <div class="flex flex-col items-center">
-                  <h1 class="z-20 text-4xl font-bold text-center md:text-5xl my-4 md:my-10 text-white w-3/4 mx-auto lg:w-full">Experience Training Like Never Before</h1>
-                  <p class="z-20 text-center text-white text-lg md:text-2xl mb-10 w-3/4 mx-auto">
-                    LIMA is a lightning fast marketing expert. We ignite your brand with unparalleled speed and precision. Our strategies deliver results that outpace the competition. Let's help your business go global.
-                  </p>
-                  <div class="flex justify-center md:justify-start">
-                    <a href="#" class="z-20 p-3 px-6 pt-2 text-white bg-blue-900 rounded-sm text-lg md:block -mt-8 md:mt-0">Get Started</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </header>
-        </div>
-        <div class="swiper-slide">
-          <header class="relative bg-top bg-no-repeat bg-cover min-h-[80vh] lg:min-h-[90vh]" style="background-image: url('img/istockphoto-2083917031-612x612.jpg')">
-            <!-- Hero Section -->
-            <section id="hero" class="pt-14 lg:pt-32 after:content-['*'] after:bg-black after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:opacity-50 after:z-10">
-              <!-- Flex Container -->
-              <div class="container mx-auto">
-                <div class="flex flex-col items-center">
-                  <h1 class="z-20 text-4xl font-bold text-center md:text-5xl my-4 md:my-10 text-white w-3/4 mx-auto lg:w-full">Unique Brand Strategy Tailored To Your Business</h1>
-                  <p class="z-20 text-center text-white text-lg md:text-2xl mb-10 w-3/4 mx-auto">
-                    LIMA is a lightning fast marketing expert. We ignite your brand with unparalleled speed and precision. Our strategies deliver results that outpace the competition. Let's help your business go global.
-                  </p>
-                  <div class="flex justify-center md:justify-start">
-                    <a href="#" class="z-20 p-3 px-6 pt-2 text-white bg-blue-900 rounded-sm text-lg md:block -mt-8 md:mt-0">Get Started</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </header>
-        </div>
+        <!-- Button -->
+        <!-- <a href="#" class="hidden p-3 px-6 pt-2 text-white rounded-sm baseline bg-blue-900 lg:block">Get Started</a> -->
+        <!-- Hamburger Icon -->
+        <button id="" class="block hamburger md:hidden focus:outline-none">
+          <img class="open-menu" src="img/menu.svg" alt="" />
+          <img class="hidden close-menu" src="img/x.svg" alt="" />
+        </button>
       </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="md:hidden">
+      <div id="menu" class="z-50 absolute flex-col items-center hidden self-end py-24 m-0 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 top-0 min-h-screen w-3/4 drop-shadow-md">
+        <a href="index.html" class="hover:text-blue-800">Home</a>
+        <a href="#features" class="hover:text-blue-800">About Us</a>
+        <a href="#features" class="hover:text-blue-800">Features</a>
+        <a href="#contact" class="hover:text-blue-800">Get Started</a>
+      </div>
     </div>
+    <!-- slide 1 -->
+
+    <section id="foot3" class="min-h-screen flex flex-col justify-center after:content-['*'] after:bg-black after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:opacity-20 after:z-10">
+      <!-- Hero Section -->
+      <section id="hero" class="p-4 lg:p-32">
+        <!-- Flex Container - flex here makes the z-index of the childern activate and override the overlay-->
+        <div class="text-center text-white flex flex-col items-center animate__animated animate__backInDown">
+          <h1 class="z-20 text-3xl font-bold md:text-5xl lg:text-6xl my-4 md:my-10 mx-auto lg:w-full">Experience Marketing Like Never Before</h1>
+          <p class="z-20 text-lg md:text-2xl mx-auto">
+            LIMA is a lightning fast marketing expert. We ignite your brand with unparalleled speed and precision. Our strategies deliver results that outpace the competition. Let's help your business go global.
+          </p>
+
+          <a href="#" class="z-20 block p-3 px-6 pt-2 my-8 text-white bg-blue-900 rounded-sm text-lg">Get Started</a>
+        </div>
+      </section>
+    </section>
 
     <!-- Features Section -->
     <section id="features" class="py-10">
-      <h2 class="text-4xl font-bold text-center">Key Features</h2>
       <!-- Flex container -->
-      <div class="container px-4 mx-auto mt-10">
-        <!-- What's Different -->
-        <div class="flex flex-col space-y-4 mb-8">
-          <h2 class="text-2xl font-bold text-center md:text-4xl md:text-center">What's different about Lima?</h2>
-          <div>
-            <p class="text-center text-slate-800 text-lg lg:w-7/12 mx-auto">Lima is more than just a marketin agency; we are a catalyst for business transformation. We empower businesses to achieve their full potential.</p>
-            <p class="mt-2 text-center text-slate-800 text-lg lg:w-7/12 mx-auto">
-              Our team of experienced marketers and trainers offer tailored solutions that deliver measurable results. From brand development to digital marketing and career coaching, we are your partners in success.
-            </p>
+      <div class="container px-8 mx-auto">
+        <div class="flex flex-col gap-4 md:gap-0 md:flex-row justify-between items-center mt-14">
+          <div class="flex flex-col gap-2 items-center justify-center">
+            <div class="bg-red-800 rounded-full p-2 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <span class="block">Industry Specific Trends</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center justify-center">
+            <div class="bg-red-800 rounded-full p-2 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <span class="block">Branding</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center justify-center">
+            <div class="bg-red-800 rounded-full p-2 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart">
+                <line x1="12" y1="20" x2="12" y2="10"></line>
+                <line x1="18" y1="20" x2="18" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="16"></line>
+              </svg>
+            </div>
+            <span class="block">Social Media Credibility</span>
+          </div>
+          <div class="flex flex-col gap-2 items-center justify-center">
+            <div class="bg-red-800 rounded-full p-2 text-white shadow-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <span class="block">Marketing Strategy</span>
           </div>
         </div>
 
-        <div class="flex flex-row items-center justify-between gap-8">
-          <!-- Numbered List -->
-          <div class="flex flex-col space-y-8 lg:w-3/4 lg:mx-auto">
-            <!-- List Item 1 -->
-            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-              <!-- Heading -->
-              <div class="rounded-l-full bg-blue-900 md:bg-transparent">
-                <div class="flex items-center space-x-2">
-                  <div class="px-4 py-2 text-white rounded-full md:py-1 bg-blue-900">01</div>
-                  <h3 class="text-lg font-bold text-white md:mb-4 md:hidden">Speed Like Lightning</h3>
+        <div class="my-20">
+          <h2 class="text-4xl font-bold text-center mb-8">Key Features</h2>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <img src="img/trend.jpg" alt="" class="hidden lg:flex self-stretch rounded shadow-md" />
+
+            <div class="flex flex-col space-y-2">
+              <!-- List Item 1 -->
+              <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <!-- Heading -->
+                <div class="rounded-l-full bg-blue-900 md:bg-transparent">
+                  <div class="flex items-center space-x-2">
+                    <div class="px-4 py-2 text-white rounded-full md:py-1 bg-blue-900">01</div>
+                    <h3 class="text-lg font-bold text-white md:mb-4 md:hidden">Speed Like Lightning</h3>
+                  </div>
+                </div>
+                <div class="flex flex-col md:block">
+                  <h3 class="hidden mb-2 text-lg font-bold md:block">Speed Like Lightning</h3>
+
+                  <p class="text-center md:text-left md:text-sm">
+                    Accelerate your business with Lima. Our cutting edge streamlined approach ensures that your marketing campaingns are executed with lightning speed by bringing your services directly to your target customers.
+                  </p>
                 </div>
               </div>
-              <div class="flex flex-col md:block">
-                <h3 class="hidden mb-4 text-lg font-bold md:block">Speed Like Lightning</h3>
-                <img src="img/istockphoto-1652511983-612x612.jpg" alt="" class="flex my-3 md:hidden" />
-                <p class="text-center md:text-left">
-                  Accelerate your business with Lima. Our cutting edge streamlined approach ensures that your marketing campaingns are executed with lightning speed by bringing your services directly to your target customers.
-                </p>
-              </div>
-            </div>
-            <!-- List Item 2 -->
-            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-              <!-- Heading -->
-              <div class="rounded-l-full bg-blue-900 md:bg-transparent">
-                <div class="flex items-center space-x-2">
-                  <div class="px-4 py-2 text-white rounded-full md:py-1 bg-blue-900">02</div>
-                  <h3 class="text-lg text-white font-bold md:mb-4 md:hidden">Operate on a Global Scale</h3>
+              <!-- List Item 2 -->
+              <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <!-- Heading -->
+                <div class="rounded-l-full bg-blue-900 md:bg-transparent">
+                  <div class="flex items-center space-x-2">
+                    <div class="px-4 py-2 text-white rounded-full md:py-1 bg-blue-900">02</div>
+                    <h3 class="text-lg text-white font-bold md:mb-4 md:hidden">Operate on a Global Scale</h3>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="hidden mb-2 text-lg font-bold md:block">Operate on a Global Scale</h3>
+                  <p class="text-center md:text-left md:text-sm">
+                    Expand your reach. We are experts in helping businesses break into international markets and establish a strong global presence. Our team has a deep understanding of international markets enabling us to create effective campaigns
+                    that resonate with your target audience on a global scale.
+                  </p>
                 </div>
               </div>
-              <div>
-                <h3 class="hidden mb-4 text-lg font-bold md:block">Operate on a Global Scale</h3>
-                <img src="img/istockphoto-1340230976-612x612.jpg" alt="" class="flex my-3 md:hidden" />
-                <p class="text-center md:text-left">
-                  Expand your reach. We are experts in helping businesses break into international markets and establish a strong global presence. Our team has a deep understanding of international markets enabling us to create effective campaigns
-                  that resonate with your target audience on a global scale.
-                </p>
-              </div>
-            </div>
-            <!-- List Item 3 -->
-            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-              <!-- Heading -->
-              <div class="rounded-l-full bg-blue-900 md:bg-transparent">
-                <div class="flex items-center space-x-2">
-                  <div class="px-4 py-2 text-white rounded-full md:py-1 bg-blue-900">03</div>
-                  <h3 class="text-lg font-bold text-white md:mb-4 md:hidden">Increase Your Revenue</h3>
+              <!-- List Item 3 -->
+              <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <!-- Heading -->
+                <div class="rounded-l-full bg-blue-900 md:bg-transparent">
+                  <div class="flex items-center space-x-2">
+                    <div class="px-4 py-2 text-white rounded-full md:py-1 bg-blue-900">03</div>
+                    <h3 class="text-lg font-bold text-white md:mb-4 md:hidden">Increase Your Revenue</h3>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="hidden mb-2 text-lg font-bold md:block">Increase Your Revenue</h3>
+                  <p class="text-center md:text-left md:text-sm">
+                    We are committed to helping you achieve sustainable growth and increase your revenue. By leveraging data-driven insights and proven marketing strategies, we develop campaigns that atttract new customers, retain exsisting ones and
+                    boost sales.
+                  </p>
                 </div>
               </div>
-              <div>
-                <h3 class="hidden mb-4 text-lg font-bold md:block">Increase Your Revenue</h3>
-                <img src="img/istockphoto-1520775283-612x612.jpg" alt="" class="flex my-3 md:hidden" />
-                <p class="text-center md:text-left">
-                  We are committed to helping you achieve sustainable growth and increase your revenue. By leveraging data-driven insights and proven marketing strategies, we develop campaigns that atttract new customers, retain exsisting ones and
-                  boost sales.
-                </p>
-              </div>
             </div>
-          </div>
-          <div class="hidden lg:flex self-stretch">
-            <img src="img/istockphoto-519915153-612x612.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -242,52 +221,71 @@
       <!-- Container to heading and testm blocks -->
       <div class="container max-w-6xl px-4 mx-auto text-center">
         <!-- Heading -->
-        <h2 class="text-2xl font-bold text-center text-blue-900 md:text-4xl">What Our Clients Are Saying...</h2>
+        <h2 class="text-2xl font-bold text-center text-blue-900 md:text-4xl mb-8">What Our Clients Are Saying...</h2>
 
-        <!-- testimonials container (swiperjs) -->
-        <div class="swiper mt-10">
-          <!-- Additional required wrapper -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <!-- Slides -->
             <div class="swiper-slide">
-              <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 shadow-lg">
-                <img src="img/person.jpg" class="w-16 rounded-md" alt="" />
-                <h5 class="text-lg font-bold">Obinna</h5>
-                <p class="text-base text-slate-800 pb-4">
-                  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
-                  similique, tempora autem voluptatum distinctio aliquam quam illum.”
-                </p>
+              <div class="p-2 lg:p-10 w-full bg-blue-100 shadow-xl rounded">
+                <div class="card-body">
+                  <p class="text-sm text-slate-800 pb-4">
+                    “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
+                    similique, tempora autem voluptatum distinctio aliquam quam illum.”
+                  </p>
+                  <div class="card-actions text-left text-gray-400">
+                    <p>Jane</p>
+                    <p>Lead Marketer - Lima</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 shadow-lg">
-                <img src="img/person.jpg" class="w-16 rounded-md" alt="" />
-                <h5 class="text-lg font-bold">Ifeoma</h5>
-                <p class="text-base text-slate-800 pb-4">
-                  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
-                  similique, tempora autem voluptatum distinctio aliquam quam illum.”
-                </p>
+              <div class="p-2 lg:p-10 w-full bg-blue-100 shadow-xl rounded">
+                <div class="card-body">
+                  <p class="text-sm text-slate-800 pb-4">
+                    “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
+                    similique, tempora autem voluptatum distinctio aliquam quam illum.”
+                  </p>
+                  <div class="card-actions text-left text-gray-400">
+                    <p>Amaka</p>
+                    <p>CEO - JSK Stitches</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="swiper-slide">
-              <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-gray-100 shadow-lg">
-                <img src="img/person.jpg" class="w-16 rounded-md" alt="" />
-                <h5 class="text-lg font-bold">Zedd</h5>
-                <p class="text-base text-slate-800 pb-4">
-                  “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
-                  similique, tempora autem voluptatum distinctio aliquam quam illum.”
-                </p>
+              <div class="p-2 lg:p-10 w-full bg-blue-100 shadow-xl rounded">
+                <div class="card-body">
+                  <p class="text-sm text-slate-800 pb-4">
+                    “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
+                    similique, tempora autem voluptatum distinctio aliquam quam illum.”
+                  </p>
+                  <div class="card-actions text-left text-gray-400">
+                    <p>Obinna</p>
+                    <p>CEO - Klassic B & H</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-2 lg:p-10 w-full bg-blue-100 shadow-xl rounded">
+                <div class="card-body">
+                  <p class="text-sm text-slate-800 pb-4">
+                    “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam itaque tenetur minus
+                    similique, tempora autem voluptatum distinctio aliquam quam illum.”
+                  </p>
+                  <div class="card-actions text-left text-gray-400">
+                    <p>Onyeka</p>
+                    <p>CEO - Lima</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-          <!-- If we need scrollbar -->
+          <div class="mt-16">
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -370,5 +368,60 @@
         <div class="hidden text-white md:block md:ml-8">Copyright &copy; 2024, All Rights Reserved</div>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>
+
+    <script>
+      const foot3 = document.querySelector('#foot3')
+      VANTA.NET({
+        el: '#foot3',
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: 0x23072f,
+        color1: 0xb400ff,
+        color2: 0xff004b,
+        colorMode: 'lerp',
+        birdSize: 1.3,
+        wingSpan: 19.0,
+      })
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          // when window width is >= 480px
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          // when window width is >= 640px
+          780: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      })
+    </script>
   </body>
 </html>

@@ -2,19 +2,28 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* swiper */
-.swiper {
+.mySwiper1 .swiper-slide {
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper1 .swiper-slide img {
   width: 100%;
-  max-height: 80vh;
+  height: 100%;
+  object-fit: cover;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  opacity: 0.5;
-  color: black;
+.mySwiper1 .swiper-slide {
+  width: 80%;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  background: black;
+.mySwiper1 .swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.mySwiper1 .swiper-slide:nth-child(3n) {
+  width: 40%;
 }
